@@ -2,33 +2,35 @@
 <html lang="es">
     <head>
         <link rel="stylesheet" href="estilos.css">
-        <title>INFORMATICA III</title>
+        <title>Calculadora</title>
     </head>
   <body>
    <div class="contenedor">
 
         <div id="num1"> 
-        <input type="number" class="entrada" id="entrada1">
+            <input type="number" class="entrada" id="entrada1">
         </div> 
         <div id="num2">
-        <input type="number" class="entrada" id="entrada2"> 
+            <input type="number" class="entrada" id="entrada2"> 
         </div>
         <div class="salida" id="num3">
         </div>   
         <div>
-        <button onclick="suma()">+</button>
-        <button onclick="resta()">-</button>
-        <button onclick="producto()">X</button>
-        <button onclick="division()">/</button>
-        </div>
+            <button class ="boton" onclick="suma()">+</button>
+            <button class ="boton" onclick="resta()">-</button>
+            <button class ="boton" onclick="producto()">X</button>
+            <button class ="boton" onclick="division()">/</button>
+            <button class ="boton" onclick="exponente()">^</button>
+        </div >
     <div>
-    <SCRipt>
+        
+    <script>
         function suma()
         {
             numa=document.getElementById("entrada1").value;
             numb=document.getElementById("entrada2").value;  
-            document.getElementById("num3").innerHTML = parseInt(numa) + parseInt(numb);
-        }
+            document.getElementById("num3").innerHTML =parseInt(numa) + parseInt(numb);
+        } 
         function resta() 
         {
             numa=document.getElementById("entrada1").value;
@@ -39,7 +41,7 @@
         {
             numa=document.getElementById("entrada1").value;
             numb=document.getElementById("entrada2").value;
-            document.getElementById("num3").innerHTML = parseInt(numa) * parseInt(numb);
+            document.getElementById("num3").innerHTML = parseInt(numa) **parseInt(numb);
         }
         function division() 
         {
@@ -47,6 +49,12 @@
             numb=document.getElementById("entrada2").value;
             document.getElementById("num3").innerHTML = parseInt(numa) / parseInt(numb);
         }
-    </SCRipt>
+        function exponente() 
+        {
+            numa=document.getElementById("entrada1").value;
+            numb=document.getElementById("entrada2").value;
+            document.getElementById("num3").innerHTML = parseInt(numa) ** parseInt(numb);
+        }
+    </script>
   </body>  
 <html>
