@@ -1,0 +1,31 @@
+.contenedor
+ {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+  }
+  .entrada
+  {
+    border-width: 5px;
+    height: 150px;
+    font-size: 50px ;
+    max-width: 100px;
+}
+.salida
+{
+    border-width: 5px;
+    min-height: 150px;
+    min-width: 300px;
+    font-size: 50px ;
+}
+
+.Padding_test
+{
+    margin:100px;
+    padding: 20px 20px 50px 100px;
+    border-style: solid;
+    border-radius: 30px;
+}
